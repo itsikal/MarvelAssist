@@ -1,13 +1,14 @@
 <main>
   <header class="clearfix">
     <img class="logo" src="../../public/images/angular.png">
-    <div *ngIf="isLoggedIn">
-      <span>username</span>
+    <div *ngIf="auth.authentificated">
+      <span>{{auth.authState.auth.email || 'User'}}</span>
     </div>
     <button type="buttom" (click)="logout()">Logout</button>
   </header>
   <nav>
     <a [routerLink]="['/heroes']">Heroes</a>
+    <a [routerLink]="['/aliance-battle']">Aliance Battle</a>
   </nav>
   <router-outlet></router-outlet>
 </main>

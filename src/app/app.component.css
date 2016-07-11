@@ -19,3 +19,17 @@ main h1 {
   margin: 0;
   padding: 0.5em;
 }
+
+main nav {
+  width: 250px;
+  float: left;
+  border-right: 1px solid #ccc;
+}
+
+main nav a {
+  display: block;
+  line-height: 35px;
+  color: #333;
+  border-bottom: 1px solid #ccc;
+  text-decoration: none;
+}

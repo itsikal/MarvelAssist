@@ -14,14 +14,13 @@ import { AuthService } from './auth/auth.service';
 })
 
 export class AppComponent {
-  isLoggedIn: boolean = false;
 
-  constructor(private af: AngularFire, private router: Router, private authService: AuthService) {
-    this.isLoggedIn = this.authService.isLoggedIn;
+  constructor(private router: Router, private auth: AuthService) {
+    console.log('AppComponent constructor', auth);
   }
 
   logout() {
     console.log('logout');
-    this.authService.logout();
+    this.auth.logout();
   }
 }
