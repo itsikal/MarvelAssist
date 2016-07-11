@@ -1,0 +1,20 @@
+h2 { 
+    color:#333;
+}
+
+.input-field {
+    height: 34px;
+    line-height: 34тьзpx;
+    font-size: 16px;  
+}
+
+.btn {
+    height: 40px;
+    line-height: 39px;
+    font-size: 16px;
+    border: none;
+}
+
+.btn-grey {
+    background: #ccc;
+}

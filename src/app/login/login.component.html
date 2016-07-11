@@ -1,0 +1,7 @@
+<h2>Sign In</h2>
+<form>
+    <input class="input-field" type="email" [(ngModel)]="user.email" placeholder="Email">
+    <input class="input-field" type="password" [(ngModel)]="user.password" placeholder="Password">
+    <button class="btn btn-grey" type="submit" (click)="login()">Login</button>
+    <button class="btn btn-google" type="submit" (click)="loginGoogle()">Login with Google</button>
+</form>

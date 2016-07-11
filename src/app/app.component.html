@@ -1,9 +1,13 @@
 <main>
-  <h1>Hello from Angular 2 App with Webpack</h1>
-  <img src="../../public/images/angular.png">
-  <ul>
-    <li *ngFor="let hero of heroes | async">
-      {{hero.name}}
-    </li>
-  </ul>
+  <header class="clearfix">
+    <img class="logo" src="../../public/images/angular.png">
+    <div *ngIf="isLoggedIn">
+      <span>username</span>
+    </div>
+    <button type="buttom" (click)="logout()">Logout</button>
+  </header>
+  <nav>
+    <a [routerLink]="['/heroes']">Heroes</a>
+  </nav>
+  <router-outlet></router-outlet>
 </main>

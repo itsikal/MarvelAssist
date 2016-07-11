@@ -1,4 +1,10 @@
 body {
-    background: #0147A7;
+    margin: 0;
     color: #fff;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }
